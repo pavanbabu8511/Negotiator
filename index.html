@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Negotiator</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <base href=" https://www.negotiator.com.in/"/>
+      <link rel="canonical" href=" https://www.negotiator.com.in/"/>
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+      <style>
+         .scrollable {
+         max-height: 70vh; 
+         max-width: 90vw;
+         overflow-y: auto; 
+         overflow-x: hidden;
+         }
+         .color-main{
+         background-color: #bbd0ff;
+         }
+         .color-1{
+         background-color: #ffd6ff;
+         }
+         .color-2{
+         background-color: #c8b6ff;
+         }
+         .btn {
+         height: auto; 
+         }
+         .modal-dialog {
+         max-width: 80%; 
+         }
+         @media (min-width: 1200px) {
+         .modal-dialog {
+         max-width: 70%;
+         }
+         }
+         @media (max-width: 767px) {
+         .modal-dialog {
+         margin-left: auto; 
+         margin-right: auto; 
+         padding-left: 0;           
+         padding-right: 0;           
+         padding-top: 3vh;
+         }
+         }
+         .form-control {
+         border: 2px solid #6c757d;           
+         border-radius: 5px;           
+         padding: 10px;           }
+         .form-control:focus {
+         border-color: black;           
+         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);          
+         }
+         label {
+         font-weight: bolder;           }
+         @font-face{
+         font-family: NegoFont;
+         src: url(Fontspring-DEMO-universo-regular.otf);
+         }
+         .assistant-nego {
+         font-family: "Assistant", sans-serif;
+         font-optical-sizing: auto;
+         font-style: normal;
+         }
+         .card-text-bold{
+         }
+      </style>
+   </head>
+   <body style="background-color:white;">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <div>
+         <nav class="navbar navbar-expand-lg container-lg rounded-4 mt-4" style="background-color: #fcfcfc">
+            <div class="container-fluid" style="background-color:#fcfcfc"; margin-top: -10px; margin-bottom: -10px;>
+            <nav class="navbar " style="background-color: #fcfcfc">
+               <div class="container-fluid" >
+                  <a class="navbar-brand" href="#">
+                     <!-- <span class="material-symbols-outlined" >
+                        linked_services
+                        </span> -->
+                     <img src="logo.jpg" style="width:40px; height: 40px;">
+                     Negotiator
+                  </a>
+               </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+               <ul class="navbar-nav" >
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#">Contact us : 9110577403</a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                     <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Locations
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+                        <li><a class="dropdown-item" href="#">Other locations soon</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+      </div>
+      </nav>
+      <div class="card mb-3 container-lg mt-4  border border-0 " style="background-color:white;">
+         <div class="row g-0">
+            <div class="col-md-4">
+               <img src="750-422.jpg" class="img-fluid rounded-start rounded-4 " alt="...">
+            </div>
+            <div class="col-md-8">
+               <div class="card-body">
+                  <p class="card-title" style="font-weight: bolder;">Do you want to buy a property (flat/ plot/ land/ house)?
+                     Do you need help in bargaining the price?
+                  </p>
+                  <p class="card-text-bold">We will be the negotiator to help you get the property for the best price.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card mb-3 container-lg mt-4  border border-0 " style="background-color:white;">
+         <div class="row g-0">
+            <div class="col-md-4">
+               <img src="500-334.jpg" class="img-fluid rounded-start rounded-4" alt="...">
+            </div>
+            <div class="col-md-8">
+               <div class="card-body">
+                  <p class="card-title" style="font-weight: bolder;">Do you have any property disputes? / Did you lend money as debt ? Do you need help in getting back what is yours?</p>
+                  <p class="card-text-bold">We will be the negotiator and help you get the fair share that is yours.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card mb-3 container-lg mt-4  border border-0 " style="background-color:white;">
+         <div class="row g-0">
+            <div class="col-md-4">
+               <img src="2.jpg" class="img-fluid rounded-start rounded-4" alt="...">
+            </div>
+            <div class="col-md-8">
+               <div class="card-body">
+                  <p class="card-title" style="font-weight: bolder;">Do you want to purchase building materials at a lower price than the market value from a company of your choice?</p>
+                  <p class="card-text-bold">We will help you get building materials directly from the company's dealer at a lower price than the market value.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card container-lg mt-4 border border-0 " style="background-color:white; text-align: center;">
+         <div class="card-body">
+            <blockquote class="blockquote mb-0">
+               <h4>Why Choose Us?</h4>
+               <footer class="">Our team will ensure you get the best deal on your dream property. Contact us now and let's get started</footer>
+            </blockquote>
+         </div>
+      </div>
+      <div class="card-group container-lg mt-4 " style="text-align: center;">
+         <div class="card border border-0" style="background-color:white;">
+            <img src="icon1.png" class="card-img-top" alt="..." style="height: 60px; width: 60px; display: block; margin-left: auto; margin-right: auto;">
+            <div class="card-body">
+               <h4 class="card-title">Expert Negotiators</h4>
+               <p class="card-text">We specialize in getting you the best price for your property.</p>
+            </div>
+         </div>
+         <div class="card border border-0" style="background-color:white;">
+            <img src="icon2.png" class="card-img-top" alt="..." style="height: 60px; width: 60px; display: block; margin-left: auto; margin-right: auto;">
+            <div class="card-body">
+               <h4 class="card-title">Personalized Service</h4>
+               <p class="card-text">Procure building materials from your preferred company dealers.</p>
+            </div>
+         </div>
+         <div class="card border border-0" style="background-color:white;">
+            <img src="icon3.png" class="card-img-top" alt="..." style="height: 60px; width: 60px; display: block; margin-left: auto; margin-right: auto;">
+            <div class="card-body">
+               <h4 class="card-title">Local Market Knowledge</h4>
+               <p class="card-text">We understand the Hyderabad property market inside out.</p>
+            </div>
+         </div>
+      </div>
+      <div class="card mb-3 container-lg mt-3  border border-0" style="">
+         <div class="row g-0">
+            <div class="col-md-6">
+               <div class="card-body mt-5 ms-5">
+                  <h3 class="card-title mt-5">Our Promise to You</h3>
+                  <p class="card-text">With our expertise, <br> you can be confident in securing your property at the most favorable terms.</p>
+                  <h4 class="card-title mt-5">Transparent Process</h4>
+                  <p class="card-text">We keep you informed every step of the way.</p>
+                  <h4 class="card-title mt-5">Transparent Process</h4>
+                  <p class="card-text">We keep you informed every step of the way.</p>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <img src="img1.webp" class="img-fluid rounded-start rounded-8 p-3 " alt="..." style="height:auto; width:auto; margin-top: 75px;">
+            </div>
+         </div>
+      </div>
+      <div class="card mb-3 container-lg  border border-0" style="">
+         <div class="row g-0">
+            <div class="col-md-8">
+               <div class="card-body ">
+                  <h3 class="card-title mt-5">Get in Touch</h3>
+                  <p class="card-text">Ready to secure your dream property at the best price? Contact us now!</p>
+               </div>
+            </div>
+            <form class="row g-3" action="https://formspree.io/f/mblrowpd" method="POST">
+               <div class="col-md-6">
+                  <label for="inputAddress" class="form-label"  >Name</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Enter Name" name= "Name">
+               </div>
+               <div class="col-md-6">
+                  <label for="inputCity" class="form-label"  >City</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="Enter City" name= "City">
+               </div>
+               <div class="col-md-6">
+                  <label for="inputMobileNumber" class="form-label"  >Mobile Number</label>
+                  <input type="text" class="form-control" id="inputMobile" placeholder="Enter Mobile Number" name= "Mobile">
+               </div>
+               <div class="col-6">
+                  <label for="inputEmail4" class="form-label" >Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email" name= "Email">
+               </div>
+               <div class="col-12">
+                  <label for="inputAddress" class="form-label"  >Message</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Enter your message" name= "Message">
+               </div>
+               <div class="col-12 mb-5">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      </div>
+      <div class="container mt-5">
+         <h2 style="text-align: center;">The Construction Labor price and available no. of workers list</h2>
+         <br>
+         <div class="d-flex justify-content-center">
+            <h3>Fill the form in</h3>
+            <button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            English
+            </button>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header color-main">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Fill the Construction Labor price and available no. of workers list</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <form  autocomplete="off" action="https://formspree.io/f/mblrowpd" method="POST" class="form-floating scrollable p-1" >
+                           <input name="Total building construction labour rate per sqft in Rs/-" class="form-control color-1" id="floatingInputValue" placeholder=" ">
+                           <label for="floatingInputValue">Total building construction labour rate per sqft in Rs/- (Materials excluded):</label><br>
+                           <p style="font-weight: bolder;">Brickwork & Blockwork(with out material) in sqft:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="4 inch brick/block work" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">4 inch brick/block work</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="6 inch brick/block work" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">6 inch brick/block work</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="8 inch brick/block work" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">8 inch brick/block work</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Murum(soil) filling in Cubic feet:"  class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Murum(soil) filling in Cubic feet:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="PCC Placing (including labor + materials) in sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">PCC Placing (including labor + materials) in sqft:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">Concrete Work per cubic feet:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Footing Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Footing Concrete:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Column Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Column Concrete:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Plinth Beam Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Plinth Beam Concrete: </label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Roof/Slab Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Roof/Slab Concrete: </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Reinforcement Bar Bending work per kg/Mt:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Reinforcement Bar Bending work per kg/Mt:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Slope Roof Concrete per Cubic feet:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Slope Roof Concrete per Cubic feet:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Cantilever & Elevated Slab per Cubic feet:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Cantilever & Elevated Slab per Cubic feet:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">Wall Plastering:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="20mm thick external plastering:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">20mm thick external plastering:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="12mm thick internal plastering:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">12mm thick internal plastering: </label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="6mm thick Ceiling/Concrete plastering: " class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">6mm thick Ceiling/Concrete plastering: </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Excavation work per sqft" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Excavation work per sqft</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Sump Tank Construction per sqft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Sump Tank Construction per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Shuttering Works per sqft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Shuttering Works per sqft:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Shuttering Board Making per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Shuttering Board Making per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Scaffolding & Staging per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Scaffolding & Staging per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Overhead Water Tank Construction per Litre:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Overhead Water Tank Construction per Litre:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">Parapet Wall:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Brickwork + Plastering Complet per sqft: " class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Brickwork + Plastering Complet per sqft: </label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Brick Masonry per Ltr:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Brick Masonry per Ltr:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="RCC per Ltr:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">RCC per Ltr:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Centering Rate per Metric Ton including material and labour" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Centering Rate per Metric Ton including material and labour</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">Electrical Works:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="a) Slab Pipes Installation per running foot (Rft):" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">a) Slab Pipes Installation per running foot (Rft):</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="b) Wall cutting & Pipe fitting per Rft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">b) Wall cutting & Pipe fitting per Rft:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">Finishing Works:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="a) Water Proofing Works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">a) Water Proofing Works per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="b) Tiles/Marble Laying per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">b) Tiles/Marble Laying per sqft:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Wall Putty + Primer + Paint Works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Wall Putty + Primer + Paint Works per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="3 to 4" plastering groove per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">3 to 4" plastering groove per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Ventilator Fixing per piece:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Ventilator Fixing per piece:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Door frame & fabrication works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Door frame & fabrication works per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Water & Plumbing works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Water & Plumbing works per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Flooring PCC per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Flooring PCC per sqft:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Repairs & Maintenance per sqft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Repairs & Maintenance per sqft:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Sanitary Works for only wall putty:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Sanitary Works for only wall putty:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Cost for MCB Installation per MCB:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Cost for MCB Installation per MCB:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Socket + Switch Installation per piece:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Socket + Switch Installation per piece:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Switch Installation per piece:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">Switch Installation per piece:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                     </div>
+                     <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="submit" class="btn btn-primary">Submit</button> 
+                     </div></form>
+                  </div>
+               </div>
+            </div>
+            <h3>/</h3>
+            <button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#staticBackdropTelugu">
+            Telugu
+            </button>
+            <div class="modal fade" id="staticBackdropTelugu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header color-main">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Fill the Construction Labor price and available no. of workers list</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <form  autocomplete="off" action="https://formspree.io/f/mblrowpd" method="POST" class="form-floating scrollable p-1" >
+                           <input name="Total building construction labour rate per sqft in Rs/-" class="form-control color-1" id="floatingInputValue" placeholder=" ">
+                           <label for="floatingInputValue">ఒక చదరపు అడుగుకి మొత్తం భవన నిర్మాణ కార్మికుల రేటు రూ/- (మెటీరియల్స్ మినహాయించబడ్డాయి)</label><br>
+                           <p style="font-weight: bolder;">ఇటుక పని & బ్లాక్ వర్క్ (మెటీరియల్ లేకుండా) చదరపు అడుగులో:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="4 inch brick/block work" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">4 అంగుళాల ఇటుక/బ్లాక్ పని</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="6 inch brick/block work" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">6 అంగుళాల ఇటుక/బ్లాక్ పని</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="8 inch brick/block work" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">8 అంగుళాల ఇటుక/బ్లాక్ పని</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Murum(soil) filling in Cubic feet:"  class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">క్యూబిక్ అడుగులలో మురం(మట్టి) నింపడం:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="PCC Placing (including labor + materials) in sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">చ.అ.లో పిసిసి ఉంచడం (లేబర్ + మెటీరియల్స్ తో సహా):</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">క్యూబిక్ అడుగులకు కాంక్రీట్ పని:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Footing Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ఫుటింగ్ కాంక్రీట్:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Column Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">కాలమ్ కాంక్రీటు:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Plinth Beam Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్లింత్ బీమ్ కాంక్రీట్: </label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Roof/Slab Concrete:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">పైకప్పు/స్లాబ్ కాంక్రీటు: </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Reinforcement Bar Bending work per kg/Mt:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">రీన్ ఫోర్స్ మెంట్ బార్ బెండింగ్ వర్క్ పర్ కేజీ/మీటర్</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Slope Roof Concrete per Cubic feet:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">క్యూబిక్ అడుగులకు వాలు పైకప్పు కాంక్రీటు:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Cantilever & Elevated Slab per Cubic feet:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">క్యూబిక్ అడుగులకు కాంటిలివర్ & ఎలివేటెడ్ స్లాబ్:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">వాల్ ప్లాస్టరింగ్:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="20mm thick external plastering:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">20mm మందం బయటి ప్లాస్టరింగ్:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="12mm thick internal plastering:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">12mm మందపాటి లోపలి ప్లాస్టరింగ్:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="6mm thick Ceiling/Concrete plastering: " class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">6mm మందపాటి సీలింగ్/కాంక్రీట్ ప్లాస్టరింగ్: </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Excavation work per sqft" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">చ.అ.కు తవ్వకం పని</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Sump Tank Construction per sqft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి చ.అ.కు సంప్ ట్యాంక్ నిర్మాణం:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Shuttering Works per sqft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి చదరపు అడుగుకి షట్టరింగ్ పనులు:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Shuttering Board Making per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ఒక చ.అ.కు షట్టరింగ్ బోర్డ్ మేకింగ్:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Scaffolding & Staging per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి చదరపు అడుగుకి పరంజా & స్టేజింగ్:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Overhead Water Tank Construction per Litre:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">లీటరుకు ఓవర్ హెడ్ వాటర్ ట్యాంక్ నిర్మాణం: </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">పారాపెట్ గోడ:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Brickwork + Plastering Complet per sqft: " class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">చ.అ.కు ఇటుక పని & ప్లాస్టరింగ్: </label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Brick Masonry per Ltr:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి లీటరుకు ఇటుక కట్టడం:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="RCC per Ltr:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి లీటరుకు ఆర్ సిసి </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Centering Rate per Metric Ton including material and labour" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">మెటీరియల్ మరియు లేబర్ తో సహా ప్రతి మెట్రిక్ టన్నుకు కేంద్రీకరణ రేటు</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">విద్యుత్ పనులు:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="a) Slab Pipes Installation per running foot (Rft):" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">
+                                    ఎ) అడుగుకు స్లాబ్ పైపుల సంస్థాపన(ఆర్ ఎఫ్ టి):</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="బి) ప్రతి ఆర్ ఎఫ్ టి కి వాల్ కటింగ్ & పైపు అమర్చడం:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">బి) ప్రతి ఆర్ ఎఫ్ టి కి వాల్ కటింగ్ & పైపు అమర్చడం:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <p style="font-weight: bolder;">ఫినిషింగ్ పనులు:</p>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="ఎ) చ.అ.కు వాటర్ ప్రూఫింగ్ పనులు:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ఎ) చ.అ.కు వాటర్ ప్రూఫింగ్ పనులు:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="b) Tiles/Marble Laying per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">బి) చ.అ.కు టైల్స్/మార్బుల్ లేయింగ్: </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Wall Putty + Primer + Paint Works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">వాల్ పుట్టీ+ప్రైమర్+పెయింట్ వర్క్స్/అడుగు</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="3 to 4" plastering groove per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">చ.అ.కు 3 నుండి 4" ప్లాస్టరింగ్ గాడి:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Ventilator Fixing per piece:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ఒక్కో ముక్కకు వెంటిలేటర్ ఫిక్సింగ్:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Door frame & fabrication works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">చ.అ.కు డోర్ ఫ్రేమ్ & ఫ్యాబ్రికేషన్ పనులు:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Water & Plumbing works per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">నీరు & ప్లంబింగ్ పనులు/అడుగు: </label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Flooring PCC per sqft:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">చ.అ.కు ఫ్లోరింగ్ పి సి సి:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Repairs & Maintenance per sqft:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">మరమ్మతులు & నిర్వహణ/అడుగు:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Sanitary Works for only wall putty:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">గోడ పుట్టీ కోసం మాత్రమే శానిటరీ పనులు:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Cost for MCB Installation per MCB:" class="form-control color-2" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ఒక్కో ఎంసిబి ఇన్ స్టాలేషన్ ఖర్చు:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row g-2">
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Socket + Switch Installation per piece:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి ముక్కకు సాకెట్ + స్విచ్ ఇన్ స్టాలేషన్:</label>
+                                 </div>
+                              </div>
+                              <div class="col-md">
+                                 <div class="form-floating">
+                                    <input name="Switch Installation per piece:" class="form-control color-1" id="floatingInputGrid" placeholder=" ">
+                                    <label for="floatingInputGrid">ప్రతి ముక్కకు స్విచ్ ఇన్ స్టాలేషన్:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                     </div>
+                     <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="submit" class="btn btn-primary">Submit</button> 
+                     </div></form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br><br><br>
+      <div class="card border border-0" style="background-color: #f2f2f2;">
+         <div class="container-lg mt-4 border border-0">
+            <p class="card-header border border-0" style="background-color:#f2f2f2;">Negotiator</p>
+            <hr style="color: grey; ">
+            <div class="card-body ">
+               <p class="card-title ">Your expert negotiator for property</p>
+               <nav class="navbar navbar-expand-lg ">
+                  <div class="container-fluid " style="background-color: #f2f2f2">
+                     <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav">
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#" >Privacy policy</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Terms of service</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Contact us : </a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Hyderabad</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+               <p>© 2023 Negotiator <a href="https://www.linkedin.com/in/pavan-babu-pappoppula/" target="_blank" rel="noopener noreferrer">(Developed by PBP)</a>. All rights reserved.</p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
